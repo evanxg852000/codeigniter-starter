@@ -7,9 +7,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 
-	public function users(){
-		$this->load->model('foo');   	
-		$users = Users::all();
+	public function users(){   	
+		$users = User::all();
 	}
 
 	public function about(){
